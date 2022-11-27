@@ -41,7 +41,6 @@ def main():
     # boring!!
     for i in range(iterations):
         response = connect_to_endpoint(search_url, query_params)
-        print(json.dumps(response, indent=4, sort_keys=True))
         
         for i, tweet in enumerate(response["data"]):
             total_users = len(response["includes"]["users"])
