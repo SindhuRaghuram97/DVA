@@ -23,9 +23,10 @@ def bearer_oauth(r):
 # actual data gathering step
 def connect_to_endpoint(url, params):
     response = requests.get(url, auth=bearer_oauth, params=params)
-    print(response.status_code)
     if response.status_code != 200:
         raise Exception(response.status_code, response.text)
+    
+    print("Collected {} tweets!".format(max_results))
     return response.json()
 
 
@@ -64,10 +65,10 @@ if __name__ == "__main__":
     hashtag = "#prolife"
 
     # CHANGE
-    max_results = 10
-    
-    # DO NOT CHANGE
     target_tweets = 100
+
+    # DO NOT CHANGE
+    max_results = 100
     iterations = math.ceil(target_tweets/max_results) 
 
     query_params = {
