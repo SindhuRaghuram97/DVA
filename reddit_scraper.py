@@ -4,11 +4,11 @@ import praw
 import pandas as pd
 import datetime as dt
 
-reddit = praw.Reddit(client_id='1E6ktObHiBEBuZ877mXTCA', \
-                     client_secret='C75x2adXfDa5R-QmzNGva_3GDghOPw', \
+reddit = praw.Reddit(client_id='<client_id>', \
+                     client_secret='<client_secret>', \
                      user_agent='DVA-App', \
-                     username='OriginalDarkLord', \
-                     password='darkhorse#21796')
+                     username='<username>', \
+                     password='<passwd>')
 
 subreddit = reddit.subreddit('ProChoice')
 top_subreddit = subreddit.top()
