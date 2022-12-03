@@ -16,62 +16,9 @@
 <script>
 
 // create 2 data_set
-var data1 = [
-   {group: "Alabama", value: 4},
-   {group: "Alaska", value: 16},
-   {group: "Arkansas", value: 8},
-   {group: "Florida", value: 4},
-   {group: "Idaho", value: 16},
-   {group: "Indiana", value: 8},
-   {group: "Iowa", value: 4},
-   {group: "Kansas", value: 16},
-   {group: "Kentucky", value: 8},
-   {group: "Louisiana", value: 4},
-   {group: "Mississippi", value: 16},
-   {group: "Missouri", value: 8},
-   {group: "Montana", value: 4},
-   {group: "Nebraska", value: 16},
-   {group: "North Carolina", value: 8},
-   {group: "North Dakota", value: 4},
-   {group: "Ohio", value: 16},
-   {group: "Oklahoma", value: 8},
-   {group: "South Carolina", value: 4},
-   {group: "South Dakota", value: 16},
-   {group: "Tefnnessee", value: 8},
-   {group: "Texas", value: 4},
-   {group: "Utah", value: 16},
-   {group: "West Virginia", value: 8},
-   {group: "Wyoming", value: 4}
-];
+var data1 = [{group: 'Alabama', value: 0.7844707807525992}, {group: 'Arkansas', value: 0.7519979327917099}, {group: 'Florida', value: 0.7872185356205418}, {group: 'Idaho', value: 0.7509260028600693}, {group: 'Indiana', value: 0.8071154383942485}, {group: 'Iowa', value: 0.7518710930432593}, {group: 'Kansas', value: 0.7870430909097195}, {group: 'Kentucky', value: 0.750376674036185}, {group: 'Louisiana', value: 0.7800178037662255}, {group: 'Mississippi', value: 0.7518739199096507}, {group: 'Missouri', value: 0.860876300268703}, {group: 'Montana', value: 0.7588693592697382}, {group: 'Nebraska', value: 0.7514344932777541}, {group: 'North Carolina', value: 0.7758619381735723}, {group: 'North Dakota', value: 0.7509743943810463}, {group: 'Ohio', value: 0.7839463273599996}, {group: 'Oklahoma', value: 0.7747200487012214}, {group: 'South Carolina', value: 0.7953238412737846}, {group: 'Tennessee', value: 0.7798331248409608}, {group: 'Texas', value: 0.7925639572261853}, {group: 'Utah', value: 0.7505826652050018}, {group: 'West Virginia', value: 0.7615848556160927}];
 
-var data2 = [
-   {group: "Arizona", value: 7},
-   {group: "California", value: 1},
-   {group: "Colorado", value: 20},
-   {group: "Connecticut", value: 10},
-   {group: "Delaware", value: 7},
-   {group: "District of Columbia", value: 1},
-   {group: "Georgia", value: 20},
-   {group: "Hawaii", value: 10},
-   {group: "Illinois", value: 7},
-   {group: "Maine", value: 1},
-   {group: "Maryland", value: 20},
-   {group: "Massachusetts", value: 10},
-   {group: "Michigan", value: 7},
-   {group: "Minnesota", value: 1},
-   {group: "Nevada", value: 20},
-   {group: "New Hampshire", value: 10},
-   {group: "New Jersey", value: 7},
-   {group: "New Mexico", value: 1},
-   {group: "New York", value: 20},
-   {group: "Oregon", value: 10},
-   {group: "Pennsylvania", value: 7},
-   {group: "Rhode Island", value: 1},
-   {group: "Vermont", value: 20},
-   {group: "Virginia", value: 10},
-   {group: "Washington", value: 7},
-   {group: "Wisconsin", value: 1}
-];
+var data2 = [{group: 'Arizona', value: 0.778819025804599}, {group: 'California', value: 0.7820111477769303}, {group: 'Colorado', value: 0.7968400772660971}, {group: 'Connecticut', value: 0.8078865855932236}, {group: 'Delaware', value: 0.7512832904855411}, {group: 'District of Columbia', value: 0.752389132976532}, {group: 'Georgia', value: 0.776640301818649}, {group: 'Hawaii', value: 0.7831211636463802}, {group: 'Illinois', value: 0.8299357108771801}, {group: 'Maine', value: 0.7544960368956839}, {group: 'Maryland', value: 0.7919475186397047}, {group: 'Massachusetts', value: 0.8167220996249289}, {group: 'Michigan', value: 0.7724151777533385}, {group: 'Minnesota', value: 0.8248838526862008}, {group: 'Nevada', value: 0.7560927962002002}, {group: 'New Hampshire', value: 0.7555908709764481}, {group: 'New Jersey', value: 0.7633906602859497}, {group: 'New Mexico', value: 0.7545182864580835}, {group: 'New York', value: 0.8017826133411423}, {group: 'Oregon', value: 0.7785759367621862}, {group: 'Pennsylvania', value: 0.7912458927746404}, {group: 'Rhode Island', value: 0.7894915054951395}, {group: 'Vermont', value: 0.850799173116684}, {group: 'Virginia', value: 0.8253962313135466}, {group: 'Washington', value: 0.7962614685560749}, {group: 'Wisconsin', value: 0.7548133410513401}];
 
 // set the dimensions and margins of the graph
 var margin = {top: 30, right: 30, bottom: 70, left: 60},
