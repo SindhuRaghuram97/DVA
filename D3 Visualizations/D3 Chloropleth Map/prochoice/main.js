@@ -18,7 +18,7 @@ UsStateChoropleth(unemployment, {
   value: d => d.rate,
   scale: d3.scaleQuantize,
   domain: [0, 1],
-  range: d3.schemeGreens[8],
+  range: ["#0d0887","#5302a3","#8b0aa5","#b83289","#db5c68","#f48849","#febd2a","#f0f921"],
   title: (f, d) => `${f.properties.name}\n${d?.rate}`
 })
 )}
