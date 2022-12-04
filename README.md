@@ -1,33 +1,10 @@
-# U.S. State Choropleth
+# DESCRIPTION:
+This project is on Sentiment analysis on Roe v Wade using Social media data for CSE 6242 DVA (Fall 2022). 
+A brief introduction is that when the US supreme court overturned the historic case on abortion rights it occupied the news channels and airwaves for weeks. Our project captures the varied responses and overall sentiment on this politically charged topic in a visual medium.
 
-https://observablehq.com/@d3/us-state-choropleth@270
+# INSTALLATION:
 
-View this notebook in your browser by running a web server in this folder. For
-example:
 
-~~~sh
-npx http-server
-~~~
+# EXECUTION: 
 
-Or, use the [Observable Runtime](https://github.com/observablehq/runtime) to
-import this module directly into your application. To npm install:
 
-~~~sh
-npm install @observablehq/runtime@5
-npm install https://api.observablehq.com/@d3/us-state-choropleth@270.tgz?v=3
-~~~
-
-Then, import your notebook and the runtime as:
-
-~~~js
-import {Runtime, Inspector} from "@observablehq/runtime";
-import define from "@d3/us-state-choropleth";
-~~~
-
-To log the value of the cell named “foo”:
-
-~~~js
-const runtime = new Runtime();
-const main = runtime.module(define);
-main.value("foo").then(value => console.log(value));
-~~~
