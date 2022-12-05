@@ -6,7 +6,7 @@ import datetime as dt
 
 reddit = praw.Reddit(client_id='<client_id>', \
                      client_secret='<client_secret>', \
-                     user_agent='DVA-App', \
+                     user_agent='<app-name>', \
                      username='<username>', \
                      password='<passwd>')
 
